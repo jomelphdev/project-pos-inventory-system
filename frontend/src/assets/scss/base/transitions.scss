@@ -1,0 +1,15 @@
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition-timing-function: ease;
+  transition-duration: .25s;
+  transition-property: all;
+}
+
+.fade-in-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-in-leave-to {
+  opacity: 0;
+}

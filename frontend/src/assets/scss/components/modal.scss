@@ -1,0 +1,54 @@
+.modal-background {
+  @apply fixed inset-0 z-50 overflow-auto p-3;
+
+  background-color: rgba(247, 250, 252, .85);
+
+  @screen md {
+    @apply p-20;
+  }
+}
+
+.modal {
+  @apply relative rounded-default shadow-xl overflow-hidden bg-white p-3;
+
+  @screen md {
+    @apply p-12;
+  }
+
+  &__header {
+    @apply text-3xl font-bold text-black;
+  }
+
+  &__body {
+    @apply mt-6;
+  }
+
+  &__footer {
+    @apply mt-8;
+  }
+
+  &__close {
+    @apply absolute text-sm font-semibold text-blue-600;
+
+    top: 1.5rem;
+    right: 2rem;
+
+    &:hover {
+      @apply text-blue-700;
+    }
+  }
+}
+
+.centered .modal {
+  &__header {
+    @apply text-center flex justify-center;
+  }
+
+  &__body {
+    @apply text-center flex justify-center;
+  }
+
+  &__footer {
+    @apply text-center flex justify-center;
+  }
+}

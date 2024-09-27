@@ -1,0 +1,23 @@
+.svg {
+  @apply bg-no-repeat bg-center;
+}
+
+.svg-update-qty {
+  background-image: svg-load("./assets/svg/update-qty.svg");
+}
+
+.svg-key-increase {
+  background-image: svg-load("./assets/svg/key-increase.svg");
+}
+
+.svg-key-decrease {
+  background-image: svg-load("./assets/svg/key-decrease.svg");
+}
+
+.svg-row-delete {
+  background-image: svg-load("./assets/svg/row-delete.svg");
+}
+
+.svg-logo-main {
+  background-image: svg-load("./assets/svg/RR-Main.svg");
+}

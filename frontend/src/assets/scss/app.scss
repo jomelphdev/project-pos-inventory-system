@@ -1,0 +1,28 @@
+// Base
+@import "base/transitions";
+@import "base/text-styles";
+@import "base/skeleton-loader";
+
+// Components
+@import "components/nav";
+@import "components/card";
+@import "components/button";
+@import "components/field";
+@import "components/table";
+@import "components/pill";
+@import "components/modal";
+@import "components/keypad-ui";
+@import "components/item-ui";
+@import "components/preferences-ui";
+@import "components/svg";
+@import "components/toast";
+
+.rr-app {
+  @apply antialiased text-gray-700;
+
+  @import "base/global";
+  @import "base/print";
+
+  font-family: Ubuntu, sans-serif;
+}
+

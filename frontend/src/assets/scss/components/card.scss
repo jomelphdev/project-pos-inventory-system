@@ -1,0 +1,31 @@
+.rr-card {
+  @apply rounded-default overflow-hidden bg-white;
+
+  position: relative;
+  top: 0;
+  transition-timing-function: ease;
+  transition-duration: .125s;
+  transition-property: all;
+
+  &__image {
+    @apply flex justify-center items-center bg-no-repeat bg-center bg-contain;
+
+    min-height: 10rem;
+  }
+}
+
+.rr-card--shadow {
+  @apply shadow-lg;
+
+  &:hover {
+    @apply shadow-xl;
+  }
+}
+
+.rr-card--inset {
+  @apply bg-gray-300 shadow-inner;
+
+  &:hover {
+    @apply shadow-inner;
+  }
+}

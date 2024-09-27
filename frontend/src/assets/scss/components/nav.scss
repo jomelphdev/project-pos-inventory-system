@@ -1,0 +1,12 @@
+.rr-nav {
+  @apply mb-4;
+
+  a {
+    // @apply text-blue-700;
+  }
+}
+
+.router-link-active,
+.router-link-exact-active {
+  @apply font-bold;
+}

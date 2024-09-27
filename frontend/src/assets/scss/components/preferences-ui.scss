@@ -1,0 +1,32 @@
+.preferences-ui {
+  @screen lg {
+    @apply flex shadow-md mb-12 overflow-hidden;
+
+    min-height: 200px;
+  }
+
+  @apply rounded-md;
+
+  min-height: 200px;
+
+  &__main {
+    @screen lg {
+      @apply flex-1;
+    }
+
+    @apply p-8;
+
+    background-color: #f9f9f9;
+  }
+
+  &__aside {
+    @screen lg {
+      width: 242px;
+
+      @apply pt-12;
+    }
+
+    @apply bg-white p-8 relative;
+
+  }
+}

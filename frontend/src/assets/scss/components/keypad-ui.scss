@@ -1,0 +1,68 @@
+.keypad-ui {
+  @apply rounded-default shadow-xl overflow-hidden bg-white py-12;
+
+  @screen md {
+    @apply px-12 py-20;
+  }
+
+  &__decrease {
+    @apply flex cursor-pointer;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  &__increase {
+    @apply flex cursor-pointer;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  &__input {
+    @apply font-bold leading-none text-black text-center;
+    @apply shadow-default appearance-none border-2 rounded-default;
+
+    max-width: 190px;
+    font-size: 135px;
+    line-height: 175px;
+
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+      margin: 0;
+      appearance: none;
+    }
+
+    &[type="number"] {
+      appearance: textfield;
+    }
+  }
+}
+
+.rr-amount__positive {
+  @apply text-blue-700;
+
+  &--100 {
+    font-size: 80px;
+  }
+
+  &--1000 {
+    font-size: 60px;
+  }
+}
+
+.rr-amount__negative {
+  @apply text-red-600;
+
+  &--10 {
+    font-size: 80px;
+  }
+
+  &--100 {
+    font-size: 60px;
+  }
+
+  &--1000 {
+    font-size: 45px;
+  }
+}

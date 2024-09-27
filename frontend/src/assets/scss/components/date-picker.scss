@@ -1,0 +1,167 @@
+/* stylelint-disable selector-no-qualifying-type */
+.kalendae {
+  @apply inline-block p-4 shadow-lg rounded-md border-2 border-gray-400 bg-white;
+
+  .k-calendar {
+    display: inline-block;
+    width: 190px;
+    font-size: 14px;
+    vertical-align: top;
+    zoom: 1;
+  }
+
+  .k-days,
+  .k-header,
+  .k-title {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .k-title {
+    position: relative;
+    height: 26px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .k-caption {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .k-btn-next-month,
+  .k-btn-previous-month {
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: .6;
+  }
+
+  .k-btn-next-month:active,
+  .k-btn-next-month:hover,
+  .k-btn-previous-month:active,
+  .k-btn-previous-month:hover {
+    opacity: .8;
+  }
+
+  .k-btn-previous-month {
+    @apply left-0 cursor-pointer;
+
+    width: 8px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik02IC4zNEwuMzQgNiA2IDExLjY2bDEuNDEtMS40MkwzLjE3IDYgNy40IDEuNzZ6Ii8+PC9zdmc+");
+  }
+
+  .k-btn-next-month {
+    @apply right-0 cursor-pointer;
+
+    width: 8px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiBmaWxsPSJjdXJyZW50Q29sb3IiPjxwYXRoIGQ9Ik0xLjc1LjM0TDcuNDEgNmwtNS42NiA1LjY2LTEuNDEtMS40Mkw0LjU4IDYgLjM0IDEuNzZ6Ii8+PC9zdmc+");
+  }
+
+  .k-btn-previous-year {
+    @apply hidden;
+  }
+
+  .k-btn-next-year {
+    @apply hidden;
+  }
+
+  .k-days span,
+  .k-header span {
+    box-sizing: border-box;
+    float: left;
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+
+  .k-header span {
+    margin-bottom: 2px;
+    font-weight: 700;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .k-days span {
+    font-weight: 500;
+    border-radius: 3px;
+  }
+
+  .k-days span.k-today {
+    @apply border-gray-400 bg-gray-100;
+
+    font-weight: 700;
+  }
+
+  .k-days span.k-active {
+    cursor: pointer;
+  }
+
+  .k-days span.k-selected {
+    font-weight: 700;
+    color: #222;
+    background: #fdfdfd;
+    border-color: #ddd;
+  }
+
+  .k-days span.k-selected.k-active,
+  .k-days span.k-selected.k-active:hover {
+    @apply bg-blue-600 text-white border-transparent;
+  }
+
+  .k-days span.k-active:hover {
+    @apply border-blue-600 bg-blue-100 text-blue-800;
+  }
+
+  .k-days span.k-out-of-month {
+    color: #ccc;
+  }
+
+  .k-first-month .k-btn-next-month,
+  .k-first-month .k-btn-next-year,
+  .k-last-month .k-btn-previous-month,
+  .k-last-month .k-btn-previous-year,
+  .k-middle-month .k-btn-next-month,
+  .k-middle-month .k-btn-next-year,
+  .k-middle-month .k-btn-previous-month,
+  .k-middle-month .k-btn-previous-year {
+    display: none;
+  }
+
+  .k-title.k-disable-year-nav .k-btn-next-year,
+  .k-title.k-disable-year-nav .k-btn-previous-year {
+    display: none;
+  }
+
+  .k-title.k-disable-year-nav .k-btn-next-month {
+    right: 0;
+  }
+
+  .k-title.k-disable-year-nav .k-btn-previous-month {
+    left: 0;
+  }
+
+  &.k-disable-next-month-btn .k-btn-next-month,
+  &.k-disable-next-year-btn .k-btn-next-year,
+  &.k-disable-previous-month-btn .k-btn-previous-month,
+  &.k-disable-previous-year-btn .k-btn-previous-year {
+    display: none;
+  }
+
+  .k-caption-month {
+    @apply inline-block;
+  }
+
+  .k-caption-year {
+    @apply inline-block ml-1;
+  }
+}
+/* stylelint-enable selector-no-qualifying-type */

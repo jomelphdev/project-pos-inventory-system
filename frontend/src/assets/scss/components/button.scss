@@ -1,0 +1,66 @@
+.rr-button {
+  @apply flex bg-white border-default border-gray-400 py-2 px-4 rounded-default text-sm;
+
+  &:hover:not(:disabled) {
+    @apply border-gray-500 shadow-default;
+  }
+
+  &:focus {
+    @apply outline-none;
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed text-gray-400 border-gray-300;
+  }
+
+  &--left {
+    @apply rounded-r-none;
+  }
+
+  &--middle {
+    @apply rounded-none;
+
+    border-left-color: theme("colors.gray.200");
+  }
+
+  &--right {
+    @apply rounded-l-none;
+
+    border-left-color: theme("colors.gray.200");
+  }
+}
+
+.rr-button--primary:not(:disabled) {
+  @apply text-blue-600 border-blue-600 border-2 font-bold;
+
+  &:hover {
+    @apply bg-blue-100 text-blue-700 border-blue-700;
+  }
+}
+
+.rr-button--primary-solid:not(:disabled) {
+  @apply text-white border-blue-600 border-2 font-bold bg-blue-600;
+
+  &:hover {
+    @apply bg-blue-700 text-white border-blue-700;
+  }
+}
+
+.rr-button--danger:not(:disabled) {
+  @apply text-red-600 border-red-600 border-2 font-bold;
+
+  &:hover {
+    @apply bg-red-100 text-red-700 border-red-700;
+  }
+}
+
+.rr-button--lg {
+  @apply py-3 px-8 text-base;
+}
+
+.rr-add-remaining {
+  @apply absolute;
+
+  right: 5px;
+  bottom: 4px;
+}

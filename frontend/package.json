@@ -1,0 +1,113 @@
+{
+  "name": "retail-right",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "e2e": "cypress open",
+    "test": "jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "@mathieustan/vue-intercom": "^0.0.9",
+    "@sentry/browser": "^6.10.0",
+    "@sentry/integrations": "^6.10.0",
+    "@sentry/tracing": "^6.10.0",
+    "@vue-hero-icons/outline": "^1.7.2",
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "countup.js": "^2.0.7",
+    "dotenv": "^8.2.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "js-sha256": "^0.9.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "postcss-inline-svg": "^6.0.0",
+    "pusher-js": "^7.0.3",
+    "qz-tray": "^2.1.2",
+    "supports-hyperlinks": "^3.0.0",
+    "uuid": "^8.3.1",
+    "uuidv4": "^6.2.13",
+    "v-calendar": "^2.3.0",
+    "v-mask": "^2.2.4",
+    "vue": "^2.6.12",
+    "vue-barcode-qrcode-scanner": "^1.0.7",
+    "vue-currency-input": "^1.22.3",
+    "vue-meta": "^2.4.0",
+    "vue-qrcode-component": "^2.1.1",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.4.8",
+    "vue-toasted": "^1.1.28",
+    "vue2-filters": "^0.11.0",
+    "vuelidate": "^0.7.6",
+    "vuex": "^3.4.0",
+    "vuex-persist": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/lodash": "^4.14.195",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-router": "^5.0.8",
+    "@vue/cli-plugin-vuex": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^1.3.4",
+    "@vue/vue2-jest": "^28.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.1.3",
+    "cypress": "^10.4.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-jest": "^26.9.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "husky": "^4.3.0",
+    "jest": "^28.1.3",
+    "lint-staged": "^10.5.1",
+    "postcss": "^8.4.24",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.4",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0",
+    "stylelint-order": "^4.1.0",
+    "tailwindcss": "^3.3.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "plugin:cypress/recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,md,html,css}": "prettier --write",
+    "*.{js,jsx,vue}": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.scss": "stylelint --fix --syntax=scss"
+  }
+}

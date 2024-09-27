@@ -1,0 +1,23 @@
+.rr-title-h3 {
+  @apply font-bold text-black mb-2;
+
+  font-size: 1rem;
+}
+
+.rr-link-blue {
+  @apply text-blue-600;
+
+  &:hover {
+    @apply text-blue-700;
+  }
+
+}
+
+.rr-link-gray {
+  @apply text-gray-700;
+
+  &:hover {
+    @apply text-blue-700;
+  }
+
+}

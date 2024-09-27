@@ -1,0 +1,11 @@
+.number-tile {
+  @apply rounded-default overflow-hidden bg-white p-8 shadow-md;
+
+  &__label {
+    @apply box-border block mb-0 text-sm font-bold text-gray-600;
+  }
+
+  &__value {
+    @apply text-5xl font-semibold leading-tight text-gray-700;
+  }
+}

@@ -1,0 +1,24 @@
+.toasted-container.top-left.top-left {
+  top: 1rem;
+  left: 1rem;
+}
+
+.toasted-container.full-width.full-width {
+  max-width: calc(100% - 2rem);
+}
+
+.toasted-container .toasted.toasted-primary {
+  @apply shadow-md rounded-tl-none rounded-bl-none bg-white border-l-4 px-6 py-4 font-medium text-gray-700 border-blue-600;
+
+  &.success {
+    @apply bg-white text-gray-700 border-teal-500;
+  }
+
+  &.info {
+    @apply bg-white border-orange-500;
+  }
+
+  &.error {
+    @apply bg-white border-red-500;
+  }
+}

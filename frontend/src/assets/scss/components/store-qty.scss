@@ -1,0 +1,43 @@
+.rr-store-qty {
+  &__th {
+    @apply py-3 border-b-default border-gray-200 text-sm leading-4 font-semibold text-gray-700;
+  }
+
+  &__td {
+    @apply py-4 border-b-default border-gray-200 font-semibold text-black;
+  }
+
+  &__tr {
+    &--hover:hover {
+      .rr-store-qty__td {
+        @apply bg-gray-100 cursor-pointer;
+      }
+    }
+  }
+
+  &__icon {
+    @apply flex bg-contain;
+
+    width: 45px;
+    height: 30px;
+  }
+
+  &__zero {
+    @apply text-gray-500;
+  }
+
+  &__positive {
+    @apply bg-green-600 text-white font-bold rounded-md py-1 px-2 shadow-default;
+  }
+
+  &__negative {
+    @apply bg-red-600 text-white font-bold rounded-md py-1 px-2 shadow-default;
+  }
+
+  &__testing {
+    @apply flex bg-contain;
+
+    width: 45px;
+    height: 30px;
+  }
+}

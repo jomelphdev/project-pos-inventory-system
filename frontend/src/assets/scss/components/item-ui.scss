@@ -1,0 +1,47 @@
+.item-ui {
+  @screen lg {
+    @apply flex shadow-md mb-12  overflow-hidden;
+
+    min-height: 200px;
+  }
+
+  @apply rounded-md;
+
+  min-height: 200px;
+
+  &--returns {
+    @screen lg {
+      margin-bottom: 160px;
+    }
+  }
+
+  &__main {
+    @screen lg {
+      @apply flex-1;
+    }
+
+    @apply p-8;
+
+    background-color: #f9f9f9;
+  }
+
+  &__aside {
+    @screen lg {
+      width: 400px;
+    }
+
+    @apply bg-white p-8 relative pb-24;
+
+  }
+
+  &__aside-delete {
+    @apply grid grid-cols-1 mt-8;
+
+    @screen lg {
+      @apply absolute;
+
+      bottom: 2rem;
+      width: calc(100% - 4rem);
+    }
+  }
+}

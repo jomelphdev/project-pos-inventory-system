@@ -1,0 +1,19 @@
+/* stylelint-disable declaration-no-important */
+@media print {
+  @page {
+    size: 5.5in 8.5in;
+    margin: .5in;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .rr-nav,
+  .preferences-ui__aside,
+  .no-print {
+    display: none !important;
+  }
+}
+/* stylelint-enable */

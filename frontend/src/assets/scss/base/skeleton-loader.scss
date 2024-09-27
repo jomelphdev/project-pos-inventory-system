@@ -1,0 +1,94 @@
+.placeholder {
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px;
+
+  &.pulse div {
+    animation: pulse 1s infinite ease-in-out;
+  }
+
+  &.wave div {
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 800px 104px;
+    animation: wave 1s infinite linear forwards;
+  }
+
+  div {
+    background: #e8e8e8;
+  }
+
+  .square {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 10px;
+  }
+
+  .rectangle {
+    float: left;
+    width: 40px;
+    height: 30px;
+    margin: 0 0 10px;
+  }
+
+  .rectangle-75 {
+    float: left;
+    width: 75%;
+    height: 30px;
+    margin: 0 0 10px;
+  }
+
+  .line {
+    float: left;
+    width: 70%;
+    height: 12px;
+    margin: 0 0 10px;
+  }
+
+  .line-right {
+    float: right;
+    width: 70%;
+    height: 12px;
+    margin: 0 0 10px;
+  }
+
+  .line-25 {
+    float: left;
+    width: 25%;
+    height: 12px;
+    margin: 0 0 10px;
+  }
+
+  .circle {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 0 15px 10px 0;
+    border-radius: 40px;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(165, 165, 165, .3);
+  }
+
+  50% {
+    background-color: rgba(165, 165, 165, .4);
+  }
+
+  100% {
+    background-color: rgba(165, 165, 165, .3);
+  }
+}
+@keyframes wave {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}

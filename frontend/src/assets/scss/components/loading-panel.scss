@@ -1,0 +1,13 @@
+.loading-panel {
+  @apply bg-white shadow-lg rounded-md p-12 flex flex-col justify-center items-center;
+
+  min-height: 18rem;
+
+  &__title {
+    @apply font-bold mb-1 text-xl;
+  }
+
+  &__text {
+    @apply text-sm;
+  }
+}
